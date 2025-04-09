@@ -1,5 +1,5 @@
 import 'package:dartz/dartz.dart';
-import 'package:exceptions/exceptions.dart';
+import 'package:exception_type/exception_type.dart';
 import 'package:flutter/foundation.dart';
 import 'package:i_tdd/i_tdd.dart';
 import 'package:i_tdd/type_def/either_type_def.dart';

@@ -1,7 +1,10 @@
 name: i_tdd
-description: "A new Flutter package project."
+description: "A utility-first Dart package for Clean Architecture and TDD in Flutter. Provides abstract use cases, parameter classes, error-handling extensions, and bloc-ready states."
 version: 0.0.1
-homepage:
+homepage: https://github.com/GenieCoderSrc/i_tdd
+repository: https://github.com/GenieCoderSrc/i_tdd
+issue_tracker: https://github.com/GenieCoderSrc/i_tdd/issues
+
 
 environment:
   sdk: ^3.6.0
@@ -13,11 +16,9 @@ dependencies:
   bloc: ^9.0.0
   equatable: ^2.0.7
   dartz: ^0.10.1
+  app_toast: ^0.0.4+1
+  exception_type: ^0.0.3
 
-  exceptions:
-    path: ../exceptions
-  app_toast:
-    path: ../app_toast
 
 dev_dependencies:
   flutter_test:
@@ -29,7 +30,8 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
-
+example:
+  path: example
   # To add assets to your package, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg

@@ -1,5 +1,5 @@
 import 'package:dartz/dartz.dart';
-import 'package:exceptions/exceptions.dart';
+import 'package:exception_type/exception_type.dart';
 
 abstract class IEitherUseCase<Type, Params> {
   Future<Either<IFailure, Type>> call(Params params);

@@ -1,6 +1,5 @@
 import 'package:dartz/dartz.dart';
-import 'package:exceptions/error_msg/map_failure_to_msg.dart';
-import 'package:exceptions/i_errors/i_failure.dart';
+import 'package:exception_type/exception_type.dart';
 import 'package:flutter/foundation.dart';
 import 'package:i_tdd/type_def/either_type_def.dart';
 import 'package:app_toast/app_toast.dart';
