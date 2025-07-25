@@ -1,6 +1,6 @@
 name: i_tdd
 description: "A utility-first Dart package for Clean Architecture and TDD in Flutter. Provides abstract use cases, parameter classes, error-handling extensions, and bloc-ready states."
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/GenieCoderSrc/i_tdd
 repository: https://github.com/GenieCoderSrc/i_tdd
 issue_tracker: https://github.com/GenieCoderSrc/i_tdd/issues
