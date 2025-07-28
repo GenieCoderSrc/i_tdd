@@ -13,11 +13,16 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+
+
   bloc: ^9.0.0
   equatable: ^2.0.7
   dartz: ^0.10.1
-  app_toast: ^0.0.4+1
-  exception_type: ^0.0.3
+
+  app_toast:
+    path: ../app_toast
+  exception_type:
+    path: ../exception_type
 
 
 dev_dependencies:
