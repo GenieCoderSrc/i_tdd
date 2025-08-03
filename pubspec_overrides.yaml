@@ -1,0 +1,6 @@
+# melos_managed_dependency_overrides: app_toast,exception_type
+dependency_overrides:
+  app_toast:
+    path: ../app_toast
+  exception_type:
+    path: ../exception_type
