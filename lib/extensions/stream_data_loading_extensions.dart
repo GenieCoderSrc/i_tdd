@@ -20,11 +20,11 @@ extension StreamDataLoadingExtension<R, P> on IOptionStreamUseCase<R, P> {
 
       // check stream report
       return dataStreamOrVoid.handleStreamData(
-          onEmpty: onEmpty, onSuccess: onSuccess);
-    } catch (e) {
-      handleError(
-        onFailed: (message) => onFailed(message),
+        onEmpty: onEmpty,
+        onSuccess: onSuccess,
       );
+    } catch (e) {
+      handleError(onFailed: (message) => onFailed(message));
     }
   }
 }

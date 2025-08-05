@@ -21,11 +21,12 @@ extension FutureDataLoadingExtension<R, P> on IEitherUseCase<R, P> {
 
       // check eitherResponse report
       eitherResponse.handleReport(
-          onSuccess: onSuccess, onFailed: onFailed, onEmpty: onEmpty);
-    } catch (e) {
-      handleError(
-        onFailed: (message) => onFailed(message),
+        onSuccess: onSuccess,
+        onFailed: onFailed,
+        onEmpty: onEmpty,
       );
+    } catch (e) {
+      handleError(onFailed: (message) => onFailed(message));
     }
   }
 }

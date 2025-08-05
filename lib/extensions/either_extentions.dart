@@ -29,7 +29,8 @@ extension ResultEitherExtensions<L, R> on Either<L, R> {
         },
         (R successReport) {
           debugPrint(
-              'ResultEitherExtensions | handleReport | success: $successReport');
+            'ResultEitherExtensions | handleReport | success: $successReport',
+          );
 
           if (successReport is List && successReport.isEmpty) {
             AppToast.showToast(msg: emptyListMsg ?? "No data available.");

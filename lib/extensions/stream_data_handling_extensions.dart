@@ -7,17 +7,16 @@ extension StreamDataHandlingExtension<R> on Option<Stream<R>> {
     required VoidCallback onEmpty,
     required SuccessCallback onSuccess,
   }) {
-    fold(
-      onEmpty,
-      (streamData) {
+    fold(onEmpty, (streamData) {
+      debugPrint(
+        'StreamDataHandlingExtension | handleStreamData | successReport: ${streamData.length}',
+      );
+      return streamData.listen((R data) {
         debugPrint(
-            'StreamDataHandlingExtension | handleStreamData | successReport: ${streamData.length}');
-        return streamData.listen((R data) {
-          debugPrint(
-              'StreamDataHandlingExtension | handleStreamData | data length: ${data.toString()}');
-          return onSuccess(data);
-        });
-      },
-    );
+          'StreamDataHandlingExtension | handleStreamData | data length: ${data.toString()}',
+        );
+        return onSuccess(data);
+      });
+    });
   }
 }
