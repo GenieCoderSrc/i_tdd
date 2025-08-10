@@ -20,7 +20,7 @@ Add the package to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  i_tdd: ^0.0.1
+  i_tdd: latest_version
 ```
 
 Then run:
