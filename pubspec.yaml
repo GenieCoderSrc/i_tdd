@@ -1,22 +1,22 @@
 name: i_tdd
 description: "A utility-first Dart package for Clean Architecture and TDD in Flutter. Provides abstract use cases, parameter classes, error-handling extensions, and bloc-ready states."
-version: 0.0.2
+version: 0.0.3
 homepage: https://github.com/GenieCoderSrc/i_tdd
 repository: https://github.com/GenieCoderSrc/i_tdd
 issue_tracker: https://github.com/GenieCoderSrc/i_tdd/issues
 
 
 environment:
-  sdk: ^3.8.1
-  flutter: ">=1.17.0"
+  sdk: ^3.9.0
+  flutter: ">=3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
 
 
-  app_toast: ^0.0.4+1
-  exception_type: ^0.0.3
+  app_toast: ^0.0.5
+  exception_type: ^0.0.4
 
   bloc: ^9.0.0
   equatable: ^2.0.7
@@ -26,7 +26,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^6.0.0
+  
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
