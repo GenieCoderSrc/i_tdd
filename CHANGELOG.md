@@ -1,5 +1,15 @@
 # Changelog
 
+## ^9.2.2
+
+### Jun 15, 2026
+
+### ✨ Updated
+- Updated `bloc: ^9.2.1`
+- Updated `equatable: ^2.0.8`
+
+
+
 All notable changes to this project will be documented in this file.
 
 ## 0.0.3
