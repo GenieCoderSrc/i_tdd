@@ -15,8 +15,8 @@ dependencies:
     sdk: flutter
 
 
-  app_toast: ^0.0.6
-  exception_type: ^0.0.5
+  app_toast: ^0.0.7
+  exception_type: ^0.0.6
 
   bloc: ^9.2.1
   equatable: ^3.0.0
