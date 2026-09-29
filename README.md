@@ -19,6 +19,8 @@ A utility-first package for simplifying Clean Architecture and Test-Driven Devel
 Add the package to your `pubspec.yaml`:
 
 ```yaml
+resolution: workspace
+
 dependencies:
   i_tdd: latest_version
 ```
