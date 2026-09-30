@@ -19,16 +19,14 @@ extension FutureStreamDataLoadingExtension<R, P>
       // load future stream data
       final Future<Option<Stream<R>>> dataStreamOrVoid = this(params);
 
-      dataStreamOrVoid
-          .then((dataStreamOption) {
-            dataStreamOption.handleStreamData(
-              onEmpty: onEmpty,
-              onSuccess: onSuccess,
-            );
-          })
-          .catchError((e) {
-            handleError(onFailed: (message) => onFailed(message));
-          });
+      dataStreamOrVoid.then((dataStreamOption) {
+        dataStreamOption.handleStreamData(
+          onEmpty: onEmpty,
+          onSuccess: onSuccess,
+        );
+      }).catchError((e) {
+        handleError(onFailed: (message) => onFailed(message));
+      });
     } catch (e) {
       handleError(onFailed: (message) => onFailed(message));
     }
