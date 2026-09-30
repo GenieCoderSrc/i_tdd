@@ -15,7 +15,7 @@ extension ResultEitherExtensions<L, R> on Either<L, R> {
     VoidCallback? onEmpty,
   }) async {
     try {
-      return fold(
+      return await fold(
         (L l) {
           final String message = mapFailureToMessage(l as IFailure);
           debugPrint('ResultEitherExtensions | handleReport | error: $message');

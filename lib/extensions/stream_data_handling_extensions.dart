@@ -11,11 +11,11 @@ extension StreamDataHandlingExtension<R> on Option<Stream<R>> {
       debugPrint(
         'StreamDataHandlingExtension | handleStreamData | successReport: ${streamData.length}',
       );
-      return streamData.listen((R data) {
+      streamData.listen((R data) {
         debugPrint(
           'StreamDataHandlingExtension | handleStreamData | data length: ${data.toString()}',
         );
-        return onSuccess(data);
+        onSuccess(data);
       });
     });
   }

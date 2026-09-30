@@ -1,5 +1,3 @@
-library i_tdd;
-
 // domain layer
 export 'domain/models/params.dart';
 export 'domain/usecases/i_usecase.dart';
